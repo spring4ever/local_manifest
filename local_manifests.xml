@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Device resources -->
+  <project path="device/xiaomi/spring" name="spring4ever/android_device_xiaomi_spring" revision="lineage-23.2" />
+  <project path="device/xiaomi/spring-kernel" name="spring4ever/android_device_xiaomi_spring-kernel" revision="lineage-23.2" />
+  <project path="vendor/xiaomi/spring" name="spring4ever/android_vendor_xiaomi_spring" revision="lineage-23.2" />
+
+  <!-- Hardware resources -->
+  <remove-project name="hardware/qcom-caf/common" />
+  <project path="hardware/qcom-caf/common" name="spring4ever/android_hardware_qcom-caf_common" revision="lineage-23.2">
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm6375-6.1/Android.bp" />
+  </project>
+  <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" revision="lineage-23.2" />
+
+  <!-- HALs resources -->
+  <project path="hardware/qcom-caf/sm6375-6.1/audio/agm" name="spring4ever/android_vendor_qcom_opensource_agm" revision="lineage-23.2-caf-sm6375-6.1" />
+  <project path="hardware/qcom-caf/sm6375-6.1/audio/pal" name="spring4ever/android_vendor_qcom_opensource_arpal-lx" revision="lineage-23.2-caf-sm6375-6.1" />
+  <project path="hardware/qcom-caf/sm6375-6.1/audio/primary-hal" name="spring4ever/android_hardware_qcom_audio-ar" revision="lineage-23.2-caf-sm6375-6.1" />
+  <project path="hardware/qcom-caf/sm6375-6.1/audio/graphservices" name="spring4ever/android_vendor_qcom_opensource_audioreach-graphservices" revision="lineage-23.2-caf-sm6375-6.1" />
+  <project path="hardware/qcom-caf/sm6375-6.1/display" name="spring4ever/android_hardware_qcom_display" revision="lineage-23.2-caf-sm6375-6.1" />
+  <project path="hardware/qcom-caf/sm6375-6.1/dataipa" name="spring4ever/android_vendor_qcom_opensource_dataipa" revision="lineage-23.2-caf-sm6375-6.1" />
+  <project path="hardware/qcom-caf/sm6375-6.1/data-ipa-cfg-mgr" name="spring4ever/android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="lineage-23.2-caf-sm6375-6.1" />
+</manifest>
