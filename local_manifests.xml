@@ -7,7 +7,7 @@
   <project path="vendor/xiaomi/spring" name="spring4ever/android_vendor_xiaomi_spring" revision="lineage-23.2" />
 
   <!-- Hardware resources -->
-  <remove-project name="hardware/qcom-caf/common" />
+  <remove-project path="hardware/qcom-caf/common" />
   <project path="hardware/qcom-caf/common" name="spring4ever/android_hardware_qcom-caf_common" revision="lineage-23.2">
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm6375-6.1/Android.bp" />
   </project>
